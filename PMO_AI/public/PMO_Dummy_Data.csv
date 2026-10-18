@@ -1,0 +1,13 @@
+group,title,status,description,metric1_label,metric1_value,metric2_label,metric2_value,metric3_label,metric3_value
+overview,Risks & Mitigation,,1 high, 2 medium,,3 active,,,,
+overview,Resource Utilization,,Balanced across teams,,84%,,,,
+overview,Timeline & Schedule,,No major slippages,,On Track,,,,
+overview,Scope Completion,,+5% MoM,,68%,,,,
+risks,API integration delay,Red,The external API partner is delayed by two weeks, affecting Project Beta release timing.,Impact,High,Confidence,Medium,Mitigation progress,60%
+risks,QA regression backlog,Amber,Regression test coverage is below the target for core customer journeys, limiting release confidence.,Open regression tickets,14,Automation progress,78%,
+resources,Engineering capacity,Green,Current engineering utilization is 86% with sufficient bench for urgent issues.,Utilization,86%,Onboarding hires,2,
+resources,Product and design alignment,Green,Product and design remain aligned to the roadmap with no major rework identified.,Design coverage,94%,Product syncs,Weekly,
+schedule,Project Alpha milestone,Green,Feature completion is on track for the next alpha milestone with no forecasted slip.,Completion,82%,Forecast date,Aug 22,
+schedule,Project Beta integration,Amber,Integration work remains the primary schedule risk and is under daily gating review.,Completion,71%,Forecast date,Sep 5,
+scope,Program scope coverage,Green,The core scope has a healthy completion rate and limited churn from scope changes.,Completed,68%,Remaining,24%,Change requests,8%
+scope,Scope risk pockets,Amber,Integration and third-party validation work has the most remaining scope and requires close coordination.,Risk area,Integration,Mitigation actions,4,
