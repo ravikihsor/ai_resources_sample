@@ -1,0 +1,27 @@
+# Multi-Agent BRD to Engineering (BRD-to-Engg) Pipeline
+
+An end-to-end multi-agent orchestration framework designed to ingest, decompose, and transform unstructured **Business Requirements Documents (BRDs)** and Product Requirement Documents (PRDs) into comprehensive, production-ready **Engineering Specifications**, architecture blueprints, API contracts, and delivery tasks.
+
+---
+
+## 📌 Overview
+
+Translating high-level business requirements into technical execution plans typically requires days of cross-functional alignment. This system utilizes specialized collaborative AI agents to automate the pipeline:
+
+1. **Ingests** business problem statements and functional requirements.
+2. **Grounds** decisions against architectural standards and enterprise knowledge bases.
+3. **Decomposes** scope into system architecture, data models, and API interfaces.
+4. **Produces** actionable sprint backlogs (Epics, User Stories, Acceptance Criteria) and technical documentation.
+
+---
+
+## 📂 Repository Structure
+
+```text
+MULTI_AGENT_BRD_TO_ENGG/
+│
+├── Inputs/                 # Raw input BRDs, PRDs, RFPs, and business briefs (DOCX, PDF, MD)
+├── Knowledge Base/         # Architecture patterns, domain guidelines, tech-stack standards, and SOPs
+├── Solution Building/      # Multi-agent orchestrators, agent role definitions, prompts, and workflows
+├── JasonFiles/             # Structured intermediary data, entity schemas, JSON payloads, and API specs
+└── Output/                 # Final deliverables: Architecture Design Documents, Epics/Stories, and Test Plans
