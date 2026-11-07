@@ -1,0 +1,1917 @@
+[
+  {
+    "run_id": "brd-1794024078227-nfld8s",
+    "project_name": "TEST_BDA_SCM_BRD",
+    "brd_hash": "55152eb25d1fdf032151de207ccfae5bcb03fb8917c426e630c98b3614802138",
+    "generated_at": "2026-11-07T04:14:19.878Z",
+    "quality": {
+      "badge": "Amber",
+      "reasons": [
+        "Consistency below threshold",
+        "Revision cap reached (2 cycles) without passing: engineering_plan, poc, tech_stack"
+      ],
+      "evaluation": {
+        "groundedness_pct": 95,
+        "completeness_pct": 100,
+        "uncovered_sections": [],
+        "contradictions": 2,
+        "actionability": 4.6,
+        "overall_score": 3.84,
+        "below_threshold": [
+          "Consistency"
+        ],
+        "schema_parse_rate": 100,
+        "pipeline_ms": 465526,
+        "success_criteria": {
+          "completeness_100": true,
+          "actionability_gte_4": true,
+          "under_5_min": false
+        }
+      },
+      "agent_scores": {
+        "engineering_plan": {
+          "groundedness_pct": 88,
+          "completeness_pct": 36,
+          "contradictions": 1,
+          "actionability": 4,
+          "scope_creep": 1,
+          "below_threshold": [
+            "completeness",
+            "consistency"
+          ],
+          "pass": false,
+          "schema_valid": true,
+          "json_repairs": 0,
+          "rag_hits": 8,
+          "exec_ms": 48445,
+          "input_hash": "1697e2672f58fea3d892583280be9d44ec227a2914c96286f0c2ba3a1680033f",
+          "output_hash": "8dec6e2279b792242bcf7adf9b7d9f47399f8bf62ab1d8d2c3cbf589f05b8022",
+          "guardrail_triggers": []
+        },
+        "schedule": {
+          "groundedness_pct": 100,
+          "completeness_pct": 100,
+          "contradictions": 0,
+          "actionability": 5,
+          "scope_creep": 0,
+          "below_threshold": [],
+          "pass": true,
+          "schema_valid": true,
+          "json_repairs": 0,
+          "rag_hits": 8,
+          "exec_ms": 22942,
+          "input_hash": "4021993cd4595155122f6b7a852d11dfa941dea69aed3bcfe1570b78bb687506",
+          "output_hash": "c96648cd52caf29982e3ac606d6401f9c75842bbc03eae902e3dbfc25664793e",
+          "guardrail_triggers": []
+        },
+        "architecture": {
+          "groundedness_pct": 100,
+          "completeness_pct": 100,
+          "contradictions": 0,
+          "actionability": 5,
+          "scope_creep": 0,
+          "below_threshold": [],
+          "pass": true,
+          "schema_valid": true,
+          "json_repairs": 0,
+          "rag_hits": 8,
+          "exec_ms": 9,
+          "input_hash": "8f2536331a152e4b99d819afd1e95c5b144c5f05752b013509de0f5063a6bd9f",
+          "output_hash": "5d7c7532fa81ce6b90d470af14f500393d229c3a7f2bd89982ec14d2884e79c2",
+          "guardrail_triggers": []
+        },
+        "poc": {
+          "groundedness_pct": 100,
+          "completeness_pct": 23,
+          "contradictions": 0,
+          "actionability": 4,
+          "scope_creep": 0,
+          "below_threshold": [
+            "completeness"
+          ],
+          "pass": false,
+          "schema_valid": true,
+          "json_repairs": 0,
+          "rag_hits": 8,
+          "exec_ms": 47979,
+          "input_hash": "4ee9a200d593cb57038d1d7b3634ef57b016e9ed21cd8c27e4c0c19de9fd254d",
+          "output_hash": "cab152b19a220cdcea23de037d051e0777ccb6f14732316f1945c836bc38e5ff",
+          "guardrail_triggers": []
+        },
+        "tech_stack": {
+          "groundedness_pct": 88,
+          "completeness_pct": 95,
+          "contradictions": 0,
+          "actionability": 5,
+          "scope_creep": 0,
+          "below_threshold": [
+            "completeness"
+          ],
+          "pass": false,
+          "schema_valid": true,
+          "json_repairs": 0,
+          "rag_hits": 8,
+          "exec_ms": 22564,
+          "input_hash": "6e17edac1c451ae40345408ea776a0cfb46f107f37d87e9b7154ff702a0fe4f2",
+          "output_hash": "3f26b68f2c0b4dd4be672955e51e4b68cfa2a9459a64de9523974c307a8f69d1",
+          "guardrail_triggers": [
+            "hallucination:invalid_citation_ids"
+          ]
+        }
+      }
+    },
+    "em_review": {
+      "decision": "Approve and export",
+      "rating": 3,
+      "comments": "Approve it as a Test Project. Manually evaluate the ooutcome provided by the Agent.  "
+    },
+    "brd_sections": [
+      {
+        "id": "S1",
+        "title": "1. Document Control",
+        "category": "other"
+      },
+      {
+        "id": "S2",
+        "title": "2. Executive Summary",
+        "category": "objectives"
+      },
+      {
+        "id": "S3",
+        "title": "3.1 Background",
+        "category": "objectives"
+      },
+      {
+        "id": "S4",
+        "title": "3.2 Problems to Solve",
+        "category": "other"
+      },
+      {
+        "id": "S5",
+        "title": "4. Business Objectives & Success Metrics",
+        "category": "objectives"
+      },
+      {
+        "id": "S6",
+        "title": "5.1 In Scope",
+        "category": "scope"
+      },
+      {
+        "id": "S7",
+        "title": "5.2 Out of Scope",
+        "category": "scope"
+      },
+      {
+        "id": "S8",
+        "title": "6. Stakeholders",
+        "category": "stakeholders"
+      },
+      {
+        "id": "S9",
+        "title": "7. Current-State Process (Summary)",
+        "category": "functional"
+      },
+      {
+        "id": "S10",
+        "title": "8. Future-State Vision",
+        "category": "objectives"
+      },
+      {
+        "id": "S11",
+        "title": "9. Business Requirements",
+        "category": "functional"
+      },
+      {
+        "id": "S12",
+        "title": "9.1 Supplier Onboarding & Qualification",
+        "category": "functional"
+      },
+      {
+        "id": "S13",
+        "title": "9.2 Sourcing & Quotes",
+        "category": "functional"
+      },
+      {
+        "id": "S14",
+        "title": "9.3 Purchase Orders",
+        "category": "functional"
+      },
+      {
+        "id": "S15",
+        "title": "9.4 Delivery Tracking & Risk Monitoring",
+        "category": "functional"
+      },
+      {
+        "id": "S16",
+        "title": "9.5 Invoice Reconciliation",
+        "category": "functional"
+      },
+      {
+        "id": "S17",
+        "title": "9.6 Supplier Performance",
+        "category": "nfr"
+      },
+      {
+        "id": "S18",
+        "title": "9.7 Human Oversight, Audit & Reporting",
+        "category": "data"
+      },
+      {
+        "id": "S19",
+        "title": "10. Non-Functional Requirements",
+        "category": "nfr"
+      },
+      {
+        "id": "S20",
+        "title": "11. Data & Integration Requirements",
+        "category": "integration"
+      },
+      {
+        "id": "S21",
+        "title": "12. Compliance & Control Requirements",
+        "category": "nfr"
+      },
+      {
+        "id": "S22",
+        "title": "13. Assumptions, Constraints & Dependencies",
+        "category": "data"
+      },
+      {
+        "id": "S23",
+        "title": "14. Risks",
+        "category": "data"
+      },
+      {
+        "id": "S24",
+        "title": "15. Acceptance Criteria",
+        "category": "functional"
+      },
+      {
+        "id": "S25",
+        "title": "16. High-Level Timeline & Budget (Sample)",
+        "category": "data"
+      },
+      {
+        "id": "S26",
+        "title": "12 weeks Remaining capabilities and dashboard",
+        "category": "functional"
+      },
+      {
+        "id": "S27",
+        "title": "17. Glossary",
+        "category": "functional"
+      },
+      {
+        "id": "S28",
+        "title": "18. Approvals",
+        "category": "stakeholders"
+      }
+    ],
+    "routing": {
+      "engineering_plan": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17",
+        "S18",
+        "S19",
+        "S20",
+        "S21",
+        "S22",
+        "S23",
+        "S24",
+        "S25",
+        "S26",
+        "S27",
+        "S28"
+      ],
+      "schedule": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S24",
+        "S26",
+        "S27",
+        "S28"
+      ],
+      "architecture": [
+        "S1",
+        "S4",
+        "S6",
+        "S7",
+        "S9",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17",
+        "S18",
+        "S19",
+        "S20",
+        "S21",
+        "S22",
+        "S23",
+        "S24",
+        "S25",
+        "S26",
+        "S27"
+      ],
+      "poc": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S9",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17",
+        "S19",
+        "S20",
+        "S21",
+        "S24",
+        "S26",
+        "S27"
+      ],
+      "tech_stack": [
+        "S1",
+        "S4",
+        "S8",
+        "S9",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17",
+        "S18",
+        "S19",
+        "S20",
+        "S21",
+        "S22",
+        "S23",
+        "S24",
+        "S25",
+        "S26",
+        "S27",
+        "S28"
+      ]
+    },
+    "knowledge_sources": [
+      "KB1: Org standards / Delivery playbook v3",
+      "KB2: Org standards / Estimation guideline",
+      "KB3: Org standards / Architecture principles",
+      "KB4: Templates / Risk register template",
+      "KB5: Templates / PoC charter template",
+      "KB6: Past BRDs / Self-service portal BRD (2024)",
+      "KB7: Project history / Partner portal 2025",
+      "KB8: Org standards / Team skills matrix"
+    ],
+    "artifacts": {
+      "engineering_plan": {
+        "summary": "The project will introduce an agentic AI system to automate supply chain processes at AstraSpace Systems, enhancing efficiency, compliance, and performance tracking across vendor interactions.",
+        "phases": [
+          {
+            "name": "Discovery and Data Readiness",
+            "objective": "Confirm requirements and prepare data clean-up plan.",
+            "duration_weeks": 6,
+            "deliverables": [
+              "Confirmed project requirements",
+              "Data clean-up plan"
+            ],
+            "exit_criteria": [
+              "All key stakeholders approve the requirements",
+              "Data profiling completed"
+            ],
+            "brd_refs": [
+              "S2",
+              "S4"
+            ]
+          },
+          {
+            "name": "Design",
+            "objective": "Design the solution and integration points for the AI agents, ensuring compliance and auditability.",
+            "duration_weeks": 6,
+            "deliverables": [
+              "Solution design document",
+              "Integration design document"
+            ],
+            "exit_criteria": [
+              "Design approved by all relevant stakeholders",
+              "Compliance and auditability requirements documented"
+            ],
+            "brd_refs": [
+              "S2",
+              "S6",
+              "S18"
+            ]
+          },
+          {
+            "name": "Build: Onboarding and Sourcing",
+            "objective": "Develop functionalities for supplier onboarding and sourcing processes, including RFQ generation and compliance checks.",
+            "duration_weeks": 10,
+            "deliverables": [
+              "Functioning onboarding process",
+              "Sourcing functionality with RFQ generation"
+            ],
+            "exit_criteria": [
+              "Successful demonstration of onboarding and sourcing capabilities in a lab environment",
+              "Compliance checks successfully implemented"
+            ],
+            "brd_refs": [
+              "S6",
+              "S12",
+              "S13"
+            ]
+          },
+          {
+            "name": "Build: Orders, Delivery, Invoices, Performance",
+            "objective": "Complete development of remaining functionalities including orders and performance tracking, ensuring quality reconciliation.",
+            "duration_weeks": 10,
+            "deliverables": [
+              "Completed module for order processing",
+              "Delivery tracking and performance reporting features"
+            ],
+            "exit_criteria": [
+              "Integration testing showing consistency with designed workflows",
+              "All Must-have requirements demonstrated in pilot"
+            ],
+            "brd_refs": [
+              "S6",
+              "S15",
+              "S16"
+            ]
+          },
+          {
+            "name": "Pilot",
+            "objective": "Test the complete system in a controlled environment with selected users to verify objectives have been met.",
+            "duration_weeks": 8,
+            "deliverables": [
+              "Pilot results report",
+              "Improvement measurements against predefined targets"
+            ],
+            "exit_criteria": [
+              "All pilot objectives met or exceeded",
+              "Stakeholder feedback collected"
+            ],
+            "brd_refs": [
+              "S4",
+              "S24"
+            ]
+          },
+          {
+            "name": "Rollout and Handover",
+            "objective": "Deploy the system to production and transition to business operations with comprehensive training.",
+            "duration_weeks": 8,
+            "deliverables": [
+              "Production release",
+              "Operations handover documentation"
+            ],
+            "exit_criteria": [
+              "Successful launch of the system",
+              "Business users trained and operational"
+            ],
+            "brd_refs": [
+              "S4",
+              "S24"
+            ]
+          }
+        ],
+        "milestones": [
+          {
+            "name": "Discovery Approval",
+            "phase": "Discovery and Data Readiness",
+            "target_week": 6,
+            "acceptance": "Requirements confirmed by stakeholders."
+          },
+          {
+            "name": "Design Approval",
+            "phase": "Design",
+            "target_week": 12,
+            "acceptance": "Design documents approved."
+          },
+          {
+            "name": "Build Completion: Onboarding and Sourcing",
+            "phase": "Build: Onboarding and Sourcing",
+            "target_week": 22,
+            "acceptance": "Functional modules demonstrated successfully."
+          },
+          {
+            "name": "Build Completion: Orders, Delivery, Invoices, Performance",
+            "phase": "Build: Orders, Delivery, Invoices, Performance",
+            "target_week": 32,
+            "acceptance": "All components functional as per specifications."
+          },
+          {
+            "name": "Pilot Results",
+            "phase": "Pilot",
+            "target_week": 40,
+            "acceptance": "Pilot shows measurable improvement and meets targets."
+          },
+          {
+            "name": "System Go-Live",
+            "phase": "Rollout and Handover",
+            "target_week": 48,
+            "acceptance": "System deployed in production."
+          }
+        ],
+        "risks": [
+          {
+            "risk": "Poor supplier and contract data quality limits agent accuracy",
+            "likelihood": "high",
+            "impact": "high",
+            "mitigation": "Data profiling and clean-up before pilot; data owners assigned.",
+            "owner_role": "Data Quality Manager"
+          },
+          {
+            "risk": "Integration delays with legacy systems",
+            "likelihood": "high",
+            "impact": "medium",
+            "mitigation": "Early integration design; interface contracts; fallback to file exchange.",
+            "owner_role": "Integration Architect"
+          },
+          {
+            "risk": "Agent outputs include unsupported or incorrect claims.",
+            "likelihood": "medium",
+            "impact": "high",
+            "mitigation": "Source citations, validation checks, human approval.",
+            "owner_role": "Quality Assurance Lead"
+          },
+          {
+            "risk": "Low user trust and adoption of the new system",
+            "likelihood": "medium",
+            "impact": "medium",
+            "mitigation": "Early user involvement, visible reasoning and sources, phased rollout.",
+            "owner_role": "Change Management Lead"
+          }
+        ],
+        "team_composition": [
+          {
+            "role": "Product Manager",
+            "count": 1,
+            "key_skills": [
+              "Agile methodology",
+              "Stakeholder management"
+            ],
+            "phases": [
+              "Discovery and Data Readiness",
+              "Pilot",
+              "Rollout and Handover"
+            ]
+          },
+          {
+            "role": "Business Analyst",
+            "count": 2,
+            "key_skills": [
+              "Requirements gathering",
+              "Process mapping"
+            ],
+            "phases": [
+              "Discovery and Data Readiness",
+              "Design"
+            ]
+          },
+          {
+            "role": "Software Engineer",
+            "count": 6,
+            "key_skills": [
+              "React",
+              "Node.js",
+              "API integration"
+            ],
+            "phases": [
+              "Build: Onboarding and Sourcing",
+              "Build: Orders, Delivery, Invoices, Performance"
+            ]
+          },
+          {
+            "role": "Quality Assurance Engineer",
+            "count": 2,
+            "key_skills": [
+              "Automated testing",
+              "User acceptance testing"
+            ],
+            "phases": [
+              "Build: Onboarding and Sourcing",
+              "Build: Orders, Delivery, Invoices, Performance",
+              "Pilot"
+            ]
+          },
+          {
+            "role": "Data Engineer",
+            "count": 1,
+            "key_skills": [
+              "Data modeling",
+              "ETL processes"
+            ],
+            "phases": [
+              "Discovery and Data Readiness",
+              "Build: Onboarding and Sourcing"
+            ]
+          },
+          {
+            "role": "Change Manager",
+            "count": 1,
+            "key_skills": [
+              "User training",
+              "Communication strategies"
+            ],
+            "phases": [
+              "Pilot",
+              "Rollout and Handover"
+            ]
+          }
+        ],
+        "claims": [
+          {
+            "statement": "The project will introduce an agentic AI layer to automate supply chain processes across the vendor lifecycle.",
+            "sources": [
+              "S2"
+            ]
+          },
+          {
+            "statement": "Supplier onboarding and qualification takes too long and relies on manual document review.",
+            "sources": [
+              "S4"
+            ]
+          },
+          {
+            "statement": "The system shall maintain supplier scorecards covering on-time delivery, quality, responsiveness, and cost.",
+            "sources": [
+              "S17"
+            ]
+          },
+          {
+            "statement": "All agent outputs must be grounded in company data, auditable, and approved by a human for decisions above defined thresholds.",
+            "sources": [
+              "S2"
+            ]
+          },
+          {
+            "statement": "The system shall check submissions for completeness and list missing items for the supplier.",
+            "sources": [
+              "S12"
+            ]
+          },
+          {
+            "statement": "The project has a high complexity with multiple systems requiring integration.",
+            "sources": [
+              "S1"
+            ]
+          },
+          {
+            "statement": "Human approval workflows, audit trails, and management dashboards are necessary for compliance.",
+            "sources": [
+              "S6",
+              "S18"
+            ]
+          },
+          {
+            "statement": "The project has defined metrics for success including faster sourcing, reduced manual effort, and improved compliance.",
+            "sources": [
+              "S5"
+            ]
+          }
+        ],
+        "brd_sections_addressed": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5",
+          "S6",
+          "S18",
+          "S24",
+          "S26",
+          "S27",
+          "S28"
+        ],
+        "ambiguities": [],
+        "assumptions": [
+          "Supplier master and contract data are available in digital form, with agreed owners.",
+          "Integration with existing systems will require additional time and may face challenges."
+        ]
+      },
+      "schedule": {
+        "summary": "The project will introduce an agentic AI system to automate supply chain processes at AstraSpace Systems, enhancing efficiency, compliance, and performance tracking across vendor interactions.",
+        "estimates": [
+          {
+            "work_item": "Discovery and Data Readiness",
+            "phase": "Discovery and Data Readiness",
+            "effort_person_days": 30,
+            "confidence": "high",
+            "basis": "Duration 6 weeks for discovery phase with adequate team composition."
+          },
+          {
+            "work_item": "Design",
+            "phase": "Design",
+            "effort_person_days": 30,
+            "confidence": "high",
+            "basis": "Duration 6 weeks for design phase, ensuring design completeness."
+          },
+          {
+            "work_item": "Build: Onboarding and Sourcing",
+            "phase": "Build: Onboarding and Sourcing",
+            "effort_person_days": 60,
+            "confidence": "medium",
+            "basis": "Duration 12 weeks, incorporating integration complexities, adds 20% contingency."
+          },
+          {
+            "work_item": "Build: Orders, Delivery, Invoices, Performance",
+            "phase": "Build: Orders, Delivery, Invoices, Performance",
+            "effort_person_days": 60,
+            "confidence": "medium",
+            "basis": "Duration 12 weeks with required integrations."
+          },
+          {
+            "work_item": "Pilot",
+            "phase": "Pilot",
+            "effort_person_days": 32,
+            "confidence": "high",
+            "basis": "Duration 8 weeks for pilot testing post-build."
+          },
+          {
+            "work_item": "Rollout and Handover",
+            "phase": "Rollout and Handover",
+            "effort_person_days": 32,
+            "confidence": "high",
+            "basis": "Duration 8 weeks for rollout and training."
+          }
+        ],
+        "timeline": [
+          {
+            "phase": "Discovery and Data Readiness",
+            "start_week": 0,
+            "end_week": 6
+          },
+          {
+            "phase": "Design",
+            "start_week": 6,
+            "end_week": 12
+          },
+          {
+            "phase": "Build: Onboarding and Sourcing",
+            "start_week": 12,
+            "end_week": 24
+          },
+          {
+            "phase": "Build: Orders, Delivery, Invoices, Performance",
+            "start_week": 24,
+            "end_week": 36
+          },
+          {
+            "phase": "Pilot",
+            "start_week": 36,
+            "end_week": 44
+          },
+          {
+            "phase": "Rollout and Handover",
+            "start_week": 44,
+            "end_week": 52
+          }
+        ],
+        "resource_allocation": [
+          {
+            "role": "Product Manager",
+            "phase": "Discovery and Data Readiness",
+            "fte": 1
+          },
+          {
+            "role": "Business Analyst",
+            "phase": "Discovery and Data Readiness",
+            "fte": 2
+          },
+          {
+            "role": "Data Engineer",
+            "phase": "Discovery and Data Readiness",
+            "fte": 1
+          },
+          {
+            "role": "Software Engineer",
+            "phase": "Build: Onboarding and Sourcing",
+            "fte": 6
+          },
+          {
+            "role": "Quality Assurance Engineer",
+            "phase": "Build: Onboarding and Sourcing",
+            "fte": 2
+          },
+          {
+            "role": "Change Manager",
+            "phase": "Rollout and Handover",
+            "fte": 1
+          }
+        ],
+        "contingency_pct": 20,
+        "total_duration_weeks": 52,
+        "total_effort_person_days": 244,
+        "claims": [
+          {
+            "statement": "The project aims to automate routine supply chain work across the vendor lifecycle.",
+            "sources": [
+              "S2"
+            ]
+          },
+          {
+            "statement": "All agent outputs must be grounded in company data, auditable, and approved by a human for decisions above defined thresholds.",
+            "sources": [
+              "S2"
+            ]
+          },
+          {
+            "statement": "Supplier performance scorecards and reporting are in scope.",
+            "sources": [
+              "S6"
+            ]
+          },
+          {
+            "statement": "The project will not replace the existing ERP system.",
+            "sources": [
+              "S7"
+            ]
+          },
+          {
+            "statement": "The project aims for a 40% reduction in hours spent on routine supply chain admin tasks.",
+            "sources": [
+              "S5"
+            ]
+          },
+          {
+            "statement": "Compliance checks must be consistent and suppliers screened before first order.",
+            "sources": [
+              "S5"
+            ]
+          },
+          {
+            "statement": "All Must-have requirements must be demonstrated in a pilot.",
+            "sources": [
+              "S24"
+            ]
+          },
+          {
+            "statement": "The project will run a pilot and keep modules behind explicit interfaces.",
+            "sources": [
+              "KB5"
+            ]
+          },
+          {
+            "statement": "Supplier onboarding and qualification currently depends on manual processes.",
+            "sources": [
+              "S4"
+            ]
+          },
+          {
+            "statement": "The business objectives aim for faster sourcing and better on-time delivery.",
+            "sources": [
+              "S5"
+            ]
+          },
+          {
+            "statement": "The AI agents will support various supply chain operations throughout the vendor lifecycle.",
+            "sources": [
+              "S10"
+            ]
+          },
+          {
+            "statement": "Stakeholders include COO and VP of Supply Chain, emphasizing high interest in project success.",
+            "sources": [
+              "S8"
+            ]
+          }
+        ],
+        "brd_sections_addressed": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5",
+          "S6",
+          "S7",
+          "S8",
+          "S9",
+          "S10",
+          "S11",
+          "S12",
+          "S13",
+          "S14",
+          "S15",
+          "S16",
+          "S24",
+          "S26",
+          "S27",
+          "S28"
+        ],
+        "ambiguities": [],
+        "assumptions": [
+          "Integration with existing systems will require additional time and may face challenges."
+        ]
+      },
+      "architecture": {
+        "summary": "The high-level system design for the Vendor & Partner SCM Automation using Agentic AI focuses on automating supplier onboarding, sourcing, procurement, delivery tracking, invoice reconciliation, and supplier performance management while ensuring human oversight and compliance.",
+        "components": [
+          {
+            "name": "Supplier Management Module",
+            "responsibility": "Automate supplier onboarding, qualification, and screening processes.",
+            "interfaces": [
+              "ERP Integration",
+              "Restricted-party Screening Service",
+              "Email/Supplier Portal"
+            ]
+          },
+          {
+            "name": "Sourcing and RFQ Module",
+            "responsibility": "Draft RFQs, collect and compare supplier quotes.",
+            "interfaces": [
+              "ERP Integration",
+              "Quality Management System"
+            ]
+          },
+          {
+            "name": "Purchase Order Management",
+            "responsibility": "Prepare, amend, and track purchase orders.",
+            "interfaces": [
+              "ERP Integration"
+            ]
+          },
+          {
+            "name": "Delivery Tracking Module",
+            "responsibility": "Track order status, predict delivery delays, and alert stakeholders.",
+            "interfaces": [
+              "Logistics Tracking Sources"
+            ]
+          },
+          {
+            "name": "Invoice Reconciliation Module",
+            "responsibility": "Match invoices to purchase orders and goods receipts, handle discrepancies.",
+            "interfaces": [
+              "ERP Integration"
+            ]
+          },
+          {
+            "name": "Supplier Performance Dashboard",
+            "responsibility": "Provide scorecards and trend views for supplier performance.",
+            "interfaces": [
+              "Data Visualization"
+            ]
+          },
+          {
+            "name": "Human Oversight and Audit Module",
+            "responsibility": "Manage approvals, maintain audit trails, and provide a management dashboard.",
+            "interfaces": [
+              "User Interface"
+            ]
+          }
+        ],
+        "data_flow": [
+          {
+            "from": "Suppliers",
+            "to": "Supplier Management Module",
+            "data": "Onboarding documents",
+            "protocol": "Email/Portal"
+          },
+          {
+            "from": "Supplier Management Module",
+            "to": "ERP",
+            "data": "Supplier profiles and status updates",
+            "protocol": "API"
+          },
+          {
+            "from": "Requisitions",
+            "to": "Sourcing and RFQ Module",
+            "data": "RFQ specifications",
+            "protocol": "Internal Workflow"
+          },
+          {
+            "from": "Sourcing and RFQ Module",
+            "to": "Suppliers",
+            "data": "RFQs",
+            "protocol": "Email"
+          },
+          {
+            "from": "Suppliers",
+            "to": "Sourcing and RFQ Module",
+            "data": "Quotes",
+            "protocol": "Email"
+          },
+          {
+            "from": "Sourcing and RFQ Module",
+            "to": "Purchase Order Management",
+            "data": "Selected quotes",
+            "protocol": "Internal Workflow"
+          },
+          {
+            "from": "Purchase Order Management",
+            "to": "ERP",
+            "data": "Purchase orders",
+            "protocol": "API"
+          },
+          {
+            "from": "Logistics Tracking Sources",
+            "to": "Delivery Tracking Module",
+            "data": "Order status updates",
+            "protocol": "API"
+          },
+          {
+            "from": "Invoices",
+            "to": "Invoice Reconciliation Module",
+            "data": "Invoices, purchase orders, goods receipts",
+            "protocol": "API"
+          },
+          {
+            "from": "Invoice Reconciliation Module",
+            "to": "Accounts Payable",
+            "data": "Mismatches and resolutions",
+            "protocol": "Internal Workflow"
+          },
+          {
+            "from": "Supplier Performance Data",
+            "to": "Supplier Performance Dashboard",
+            "data": "Performance metrics",
+            "protocol": "Internal Data Update"
+          }
+        ],
+        "integrations": [
+          {
+            "system": "ERP",
+            "purpose": "Manage purchase orders, receipts, and invoices.",
+            "pattern": "Read/Write"
+          },
+          {
+            "system": "Supplier Master Data",
+            "purpose": "Maintain supplier profiles and statuses.",
+            "pattern": "Read/Write"
+          },
+          {
+            "system": "Quality Management System",
+            "purpose": "Access certification and audit data.",
+            "pattern": "Read"
+          },
+          {
+            "system": "Logistics Tracking Sources",
+            "purpose": "Retrieve shipment status.",
+            "pattern": "Read"
+          },
+          {
+            "system": "Restricted-party Screening Service",
+            "purpose": "Conduct compliance checks.",
+            "pattern": "Read"
+          },
+          {
+            "system": "Email/Supplier Portal",
+            "purpose": "Facilitate document and quote exchange.",
+            "pattern": "Read/Write"
+          }
+        ],
+        "nfr_mapping": [
+          {
+            "nfr": "Response time for quote comparison under 5 minutes.",
+            "brd_ref": "NFR-01",
+            "design_response": "Implement asynchronous processing and caching results."
+          },
+          {
+            "nfr": "Availability of core services at 99.5%.",
+            "brd_ref": "NFR-02",
+            "design_response": "Adopt multi-AZ deployment and redundancy measures."
+          },
+          {
+            "nfr": "Support for 2000 suppliers and 500 POs.",
+            "brd_ref": "NFR-03",
+            "design_response": "Design scalable microservices architecture."
+          },
+          {
+            "nfr": "Role-based access and data encryption.",
+            "brd_ref": "NFR-04",
+            "design_response": "Implement security protocols and access controls."
+          },
+          {
+            "nfr": "Protecting data in transit and at rest.",
+            "brd_ref": "NFR-05",
+            "design_response": "Utilize TLS for data transmission and AES-256 for data storage."
+          },
+          {
+            "nfr": "Explainability of recommendations.",
+            "brd_ref": "NFR-06",
+            "design_response": "Include source citations and reasoning in output."
+          },
+          {
+            "nfr": "Audit records retention.",
+            "brd_ref": "NFR-07",
+            "design_response": "Set up automated compliance auditing processes."
+          },
+          {
+            "nfr": "Outputs meeting quality thresholds.",
+            "brd_ref": "NFR-08",
+            "design_response": "Define quality assurance processes and validation steps."
+          },
+          {
+            "nfr": "Usability of review interfaces.",
+            "brd_ref": "NFR-09",
+            "design_response": "Develop a cohesive user interface for all agent outputs."
+          },
+          {
+            "nfr": "Standard APIs for integration.",
+            "brd_ref": "NFR-10",
+            "design_response": "Develop REST APIs for all core functionalities."
+          },
+          {
+            "nfr": "Support for English and French.",
+            "brd_ref": "NFR-11",
+            "design_response": "Implement multi-language support in user interfaces."
+          }
+        ],
+        "complexity_rating": "high",
+        "complexity_rationale": "The system involves multiple integrations, complex data flows, and high-performance requirements, necessitating careful design and validation.",
+        "claims": [
+          {
+            "statement": "The project aims to automate the supply chain management process.",
+            "sources": [
+              "S1",
+              "S4"
+            ]
+          },
+          {
+            "statement": "The system will include modules for supplier onboarding, sourcing, order management, and performance tracking.",
+            "sources": [
+              "S6"
+            ]
+          },
+          {
+            "statement": "Human oversight is essential for supplier qualification and reconciliation processes.",
+            "sources": [
+              "S7",
+              "S12"
+            ]
+          },
+          {
+            "statement": "Integration with ERP and other existing systems is required for data consistency.",
+            "sources": [
+              "S10",
+              "S20"
+            ]
+          },
+          {
+            "statement": "Non-functional requirements include performance, availability, security, and scalability.",
+            "sources": [
+              "S19"
+            ]
+          },
+          {
+            "statement": "The system must maintain a complete audit trail for compliance.",
+            "sources": [
+              "S21"
+            ]
+          },
+          {
+            "statement": "Data must be kept secure and protected, especially sensitive information.",
+            "sources": [
+              "S19",
+              "S21"
+            ]
+          },
+          {
+            "statement": "Users need a streamlined interface to manage approvals and monitor outputs from the AI agents.",
+            "sources": [
+              "S18"
+            ]
+          }
+        ],
+        "brd_sections_addressed": [
+          "S1",
+          "S4",
+          "S6",
+          "S7",
+          "S9",
+          "S11",
+          "S12",
+          "S13",
+          "S14",
+          "S15",
+          "S16",
+          "S17",
+          "S18",
+          "S19",
+          "S20",
+          "S21",
+          "S22",
+          "S23",
+          "S24",
+          "S25",
+          "S26",
+          "S27"
+        ],
+        "ambiguities": [],
+        "assumptions": [
+          "Approved AI model endpoints meet the company's security policy.",
+          "Supplier master and contract data are available in digital form, with agreed owners."
+        ]
+      },
+      "poc": {
+        "summary": "The proof of concept (PoC) will demonstrate the capabilities of an agentic AI system to automate the vendor and partner supply chain processes. It focuses on validating essential functionalities for supplier onboarding, sourcing, purchase order processing, delivery tracking, and invoice reconciliation, while adhering to defined success metrics and integration requirements.",
+        "poc_scope": {
+          "in_scope": [
+            "Supplier onboarding and qualification",
+            "RFQ creation and quote comparison",
+            "Purchase order processing",
+            "Delivery tracking and risk alerts",
+            "Invoice and purchase order matching",
+            "Supplier performance tracking"
+          ],
+          "out_of_scope": [
+            "Replacement of the existing ERP system",
+            "Contract negotiation and final contract signing",
+            "Manufacturing planning and production scheduling",
+            "Payment execution",
+            "Supply chain activities of customers"
+          ]
+        },
+        "success_criteria": [
+          {
+            "criterion": "Faster supplier onboarding",
+            "metric": "Average onboarding time",
+            "target": "10 days",
+            "brd_ref": "O1"
+          },
+          {
+            "criterion": "Faster RFQ-to-award cycle time",
+            "metric": "RFQ-to-award cycle time",
+            "target": "7 days",
+            "brd_ref": "O2"
+          },
+          {
+            "criterion": "Fewer invoice exceptions",
+            "metric": "Invoices requiring manual resolution",
+            "target": "8%",
+            "brd_ref": "O6"
+          },
+          {
+            "criterion": "Improved on-time delivery rate",
+            "metric": "Supplier on-time delivery rate",
+            "target": "92%",
+            "brd_ref": "O5"
+          },
+          {
+            "criterion": "Earlier detection of delivery risks",
+            "metric": "Risks flagged at least 14 days before due date",
+            "target": "80%",
+            "brd_ref": "O4"
+          },
+          {
+            "criterion": "Consistent supplier compliance screening",
+            "metric": "Percentage of new suppliers screened before first order",
+            "target": "100%",
+            "brd_ref": "O8"
+          },
+          {
+            "criterion": "Timely invoice reconciliation",
+            "metric": "Percentage of invoices matched within predefined time",
+            "target": "90%",
+            "brd_ref": "O6"
+          },
+          {
+            "criterion": "Performance monitoring capability",
+            "metric": "Supplier performance data accuracy",
+            "target": "95%",
+            "brd_ref": "O7"
+          }
+        ],
+        "modular_boundaries": [
+          {
+            "module": "Agentic AI for Supplier Onboarding",
+            "interface": "Integration with supplier document management systems"
+          },
+          {
+            "module": "Agentic AI for RFQ process",
+            "interface": "Integration with procurement data systems"
+          },
+          {
+            "module": "Agentic AI for purchase order processing",
+            "interface": "Integration with ERP systems"
+          },
+          {
+            "module": "Agentic AI for delivery monitoring",
+            "interface": "Integration with logistics data sources"
+          },
+          {
+            "module": "Agentic AI for invoice reconciliation",
+            "interface": "Integration with accounts payable systems"
+          },
+          {
+            "module": "Agentic AI for Supplier Performance",
+            "interface": "Integration with performance data sources"
+          }
+        ],
+        "duration_weeks": 4,
+        "exit_decision": "Go/no-go decision based on the validation of core functionalities and success criteria achievement.",
+        "claims": [
+          {
+            "statement": "The project addresses significant inefficiencies in currently manual supply chain processes.",
+            "sources": [
+              "S2",
+              "S4"
+            ]
+          },
+          {
+            "statement": "The agentic AI system is designed to operate with human oversight for approvals above defined thresholds.",
+            "sources": [
+              "S2",
+              "S10"
+            ]
+          },
+          {
+            "statement": "Integration with existing ERP, procurement, quality, and logistics systems is a requirement.",
+            "sources": [
+              "S6",
+              "S20"
+            ]
+          },
+          {
+            "statement": "The success metrics include improving onboarding and sourcing times, as well as reducing invoice exceptions and ensuring compliance.",
+            "sources": [
+              "S5",
+              "S24"
+            ]
+          },
+          {
+            "statement": "All agent outputs must be auditable and grounded in company data, following compliance and control requirements.",
+            "sources": [
+              "S5",
+              "S10",
+              "S21"
+            ]
+          },
+          {
+            "statement": "Human approval workflows will be implemented as part of the system functionalities, supported by robust auditing capabilities.",
+            "sources": [
+              "S6",
+              "S10",
+              "S21"
+            ]
+          },
+          {
+            "statement": "The PoC will focus on Must-have requirements to ensure core functionalities are demonstrated as per the BRD guidelines.",
+            "sources": [
+              "S24"
+            ]
+          },
+          {
+            "statement": "The timeline for the PoC is set to 4 weeks, adhering to organizational guidelines for proof of concept duration.",
+            "sources": [
+              "KB5",
+              "S26"
+            ]
+          }
+        ],
+        "brd_sections_addressed": [
+          "S1",
+          "S2",
+          "S5",
+          "S7",
+          "S24"
+        ],
+        "ambiguities": [
+          {
+            "item": "Scope of performance tracking requirements not clearly defined; specifics on metrics and reporting are needed.",
+            "type": "missing",
+            "brd_ref": "S16",
+            "impact": "May affect the completeness of the supplier performance module."
+          },
+          {
+            "item": "The exact nature of integrations with legacy systems and their constraints is not detailed, raising potential risks.",
+            "type": "ambiguity",
+            "brd_ref": "S6",
+            "impact": "Could lead to integration challenges during the implementation."
+          }
+        ],
+        "assumptions": [
+          "While focusing on core functionalities, the PoC assumes the existing ERP and procurement systems will remain unchanged during the pilot phase."
+        ]
+      },
+      "tech_stack": {
+        "summary": "This document outlines the technology stack options for automating supply chain management processes at AstraSpace Systems, considering the business requirements and constraints defined in the BRD.",
+        "options": [
+          {
+            "name": "Option 1 - MERN Stack",
+            "stack": {
+              "frontend": "React",
+              "backend": "Node.js",
+              "data": "MongoDB",
+              "infrastructure": "AWS"
+            },
+            "scalability": "high",
+            "team_familiarity": "high",
+            "integration_risk": "medium",
+            "cost": "medium",
+            "pros": [
+              "High familiarity among the team with React and Node.js.",
+              "Strong performance for real-time applications.",
+              "Scalability offered by MongoDB and AWS services."
+            ],
+            "cons": [
+              "May require complex data modeling as transactions grow.",
+              "Integration complexity with legacy ERP system."
+            ]
+          },
+          {
+            "name": "Option 2 - Java/Spring with AWS",
+            "stack": {
+              "frontend": "React",
+              "backend": "Java/Spring",
+              "data": "PostgreSQL",
+              "infrastructure": "AWS"
+            },
+            "scalability": "medium",
+            "team_familiarity": "medium",
+            "integration_risk": "medium",
+            "cost": "medium",
+            "pros": [
+              "Strong typing and structure with Java, improving long-term maintainability.",
+              "Good community support for integration with various systems."
+            ],
+            "cons": [
+              "Higher resource demand compared to JavaScript alternatives.",
+              "Longer development time due to the complexity of Java frameworks."
+            ]
+          },
+          {
+            "name": "Option 3 - Django with PostgreSQL",
+            "stack": {
+              "frontend": "React",
+              "backend": "Django",
+              "data": "PostgreSQL",
+              "infrastructure": "AWS"
+            },
+            "scalability": "medium",
+            "team_familiarity": "low",
+            "integration_risk": "medium",
+            "cost": "medium",
+            "pros": [
+              "Rapid development capability with built-in admin interface.",
+              "Easy and clear database management with ORM features."
+            ],
+            "cons": [
+              "Low familiarity in the team may extend the learning curve.",
+              "Integration with legacy systems can be challenging."
+            ]
+          }
+        ],
+        "recommendation": {
+          "option": "Option 1 - MERN Stack",
+          "rationale": "Choosing the MERN stack leverages existing team familiarity, reducing development time while ensuring high scalability to accommodate future growth.",
+          "timeline_fit": "This option aligns with the indicative total duration of approximately 12 months for project delivery."
+        },
+        "production_vendor_map": [
+          {
+            "capability": "Frontend Development",
+            "vendor": "React",
+            "notes": "Widely used internal expertise."
+          },
+          {
+            "capability": "Backend Development",
+            "vendor": "Node.js",
+            "notes": "Supports asynchronous processing, suitable for high-load environments."
+          },
+          {
+            "capability": "Database Management",
+            "vendor": "MongoDB",
+            "notes": "Highly scalable, document-based database."
+          },
+          {
+            "capability": "Cloud Infrastructure",
+            "vendor": "AWS",
+            "notes": "Supports high availability and offers various integrations."
+          }
+        ],
+        "claims": [
+          {
+            "statement": "The proposed system must automate manual workflows in supply chain management to enhance efficiency.",
+            "sources": [
+              "S4"
+            ]
+          },
+          {
+            "statement": "The system must support at least 2,000 active suppliers and 500 purchase orders per week.",
+            "sources": [
+              "NFR-03"
+            ]
+          },
+          {
+            "statement": "Integration with existing ERP systems is a key requirement for the solution.",
+            "sources": [
+              "S20"
+            ]
+          },
+          {
+            "statement": "Human oversight is required for critical decision points in the workflow.",
+            "sources": [
+              "S18"
+            ]
+          },
+          {
+            "statement": "The system must provide accurate reconciliation of invoices and purchase orders.",
+            "sources": [
+              "S16"
+            ]
+          },
+          {
+            "statement": "Stakeholders expect automated notifications for key processes, especially around supplier qualifications.",
+            "sources": [
+              "S12"
+            ]
+          },
+          {
+            "statement": "The estimated total duration for the project is approximately 12 months.",
+            "sources": [
+              "S26"
+            ]
+          },
+          {
+            "statement": "Data privacy and regulatory compliance are top priorities for this initiative.",
+            "sources": [
+              "S21"
+            ]
+          }
+        ],
+        "brd_sections_addressed": [
+          "S1",
+          "S4",
+          "S8",
+          "S9",
+          "S11",
+          "S12",
+          "S13",
+          "S14",
+          "S15",
+          "S16",
+          "S18",
+          "S19",
+          "S20",
+          "S21",
+          "S22",
+          "S23",
+          "S24",
+          "S25",
+          "S26",
+          "S27",
+          "S28"
+        ],
+        "ambiguities": [],
+        "assumptions": [
+          "Integration with existing systems will require additional time and may face challenges."
+        ]
+      }
+    },
+    "critic_history": [
+      {
+        "cycle": 0,
+        "failing": [
+          "engineering_plan",
+          "schedule",
+          "poc",
+          "tech_stack"
+        ],
+        "scores": {
+          "engineering_plan": {
+            "groundedness_pct": 88,
+            "completeness_pct": 14,
+            "contradictions": 1,
+            "actionability": 4,
+            "scope_creep": 1,
+            "below_threshold": [
+              "completeness",
+              "consistency"
+            ],
+            "pass": false,
+            "schema_valid": true,
+            "json_repairs": 0,
+            "rag_hits": 8,
+            "exec_ms": 55966,
+            "input_hash": "1697e2672f58fea3d892583280be9d44ec227a2914c96286f0c2ba3a1680033f",
+            "output_hash": "60f4625ea24bec0f0a692a381fdedfb68559e52936bfb004dc61ef24281a955a",
+            "guardrail_triggers": []
+          },
+          "schedule": {
+            "groundedness_pct": 100,
+            "completeness_pct": 25,
+            "contradictions": 0,
+            "actionability": 5,
+            "scope_creep": 0,
+            "below_threshold": [
+              "completeness"
+            ],
+            "pass": false,
+            "schema_valid": true,
+            "json_repairs": 0,
+            "rag_hits": 8,
+            "exec_ms": 21239,
+            "input_hash": "4021993cd4595155122f6b7a852d11dfa941dea69aed3bcfe1570b78bb687506",
+            "output_hash": "40f21fcdad39f82346c5e0b7a8427ecd0f05bf08d650fcd191521f2d7854e7ea",
+            "guardrail_triggers": []
+          },
+          "architecture": {
+            "groundedness_pct": 100,
+            "completeness_pct": 100,
+            "contradictions": 0,
+            "actionability": 5,
+            "scope_creep": 0,
+            "below_threshold": [],
+            "pass": true,
+            "schema_valid": true,
+            "json_repairs": 0,
+            "rag_hits": 8,
+            "exec_ms": 45802,
+            "input_hash": "8f2536331a152e4b99d819afd1e95c5b144c5f05752b013509de0f5063a6bd9f",
+            "output_hash": "5d7c7532fa81ce6b90d470af14f500393d229c3a7f2bd89982ec14d2884e79c2",
+            "guardrail_triggers": [
+              "hallucination:invalid_citation_ids"
+            ]
+          },
+          "poc": {
+            "groundedness_pct": 100,
+            "completeness_pct": 23,
+            "contradictions": 0,
+            "actionability": 4,
+            "scope_creep": 1,
+            "below_threshold": [
+              "completeness"
+            ],
+            "pass": false,
+            "schema_valid": true,
+            "json_repairs": 0,
+            "rag_hits": 8,
+            "exec_ms": 17841,
+            "input_hash": "4ee9a200d593cb57038d1d7b3634ef57b016e9ed21cd8c27e4c0c19de9fd254d",
+            "output_hash": "f5e8e1d253ad20a91291edbe406086a459df3577b6d5498c4bba4cb7d5ec3428",
+            "guardrail_triggers": []
+          },
+          "tech_stack": {
+            "groundedness_pct": 88,
+            "completeness_pct": 36,
+            "contradictions": 0,
+            "actionability": 5,
+            "scope_creep": 0,
+            "below_threshold": [
+              "completeness"
+            ],
+            "pass": false,
+            "schema_valid": true,
+            "json_repairs": 0,
+            "rag_hits": 8,
+            "exec_ms": 21200,
+            "input_hash": "6e17edac1c451ae40345408ea776a0cfb46f107f37d87e9b7154ff702a0fe4f2",
+            "output_hash": "d88e652fb311e1173bcdbd07bfc8268c67cdbcc3b9ca988dd66a2862fe57786b",
+            "guardrail_triggers": [
+              "hallucination:invalid_citation_ids"
+            ]
+          }
+        }
+      },
+      {
+        "cycle": 1,
+        "failing": [
+          "engineering_plan",
+          "schedule",
+          "poc",
+          "tech_stack"
+        ],
+        "scores": {
+          "engineering_plan": {
+            "groundedness_pct": 88,
+            "completeness_pct": 89,
+            "contradictions": 1,
+            "actionability": 4,
+            "scope_creep": 1,
+            "below_threshold": [
+              "completeness",
+              "consistency"
+            ],
+            "pass": false,
+            "schema_valid": true,
+            "json_repairs": 0,
+            "rag_hits": 8,
+            "exec_ms": 60100,
+            "input_hash": "1697e2672f58fea3d892583280be9d44ec227a2914c96286f0c2ba3a1680033f",
+            "output_hash": "cb0e5cf87b864dac96e6076d9c320a83d84a511385bef6566584e9dbf1f7a89f",
+            "guardrail_triggers": []
+          },
+          "schedule": {
+            "groundedness_pct": 100,
+            "completeness_pct": 90,
+            "contradictions": 0,
+            "actionability": 5,
+            "scope_creep": 0,
+            "below_threshold": [
+              "completeness"
+            ],
+            "pass": false,
+            "schema_valid": true,
+            "json_repairs": 0,
+            "rag_hits": 8,
+            "exec_ms": 23145,
+            "input_hash": "4021993cd4595155122f6b7a852d11dfa941dea69aed3bcfe1570b78bb687506",
+            "output_hash": "81dd0a2e76ea415aaa837ff1cb534a307de22295de7b19612990f9aeecd4b56a",
+            "guardrail_triggers": []
+          },
+          "architecture": {
+            "groundedness_pct": 100,
+            "completeness_pct": 100,
+            "contradictions": 0,
+            "actionability": 4,
+            "scope_creep": 0,
+            "below_threshold": [],
+            "pass": true,
+            "schema_valid": true,
+            "json_repairs": 0,
+            "rag_hits": 8,
+            "exec_ms": 9,
+            "input_hash": "8f2536331a152e4b99d819afd1e95c5b144c5f05752b013509de0f5063a6bd9f",
+            "output_hash": "5d7c7532fa81ce6b90d470af14f500393d229c3a7f2bd89982ec14d2884e79c2",
+            "guardrail_triggers": []
+          },
+          "poc": {
+            "groundedness_pct": 100,
+            "completeness_pct": 77,
+            "contradictions": 0,
+            "actionability": 4,
+            "scope_creep": 0,
+            "below_threshold": [
+              "completeness"
+            ],
+            "pass": false,
+            "schema_valid": true,
+            "json_repairs": 0,
+            "rag_hits": 8,
+            "exec_ms": 12537,
+            "input_hash": "4ee9a200d593cb57038d1d7b3634ef57b016e9ed21cd8c27e4c0c19de9fd254d",
+            "output_hash": "dec5163811da31921ca1b4eadcad0536c35593e24cb27919f42ba61fb4a6bec6",
+            "guardrail_triggers": []
+          },
+          "tech_stack": {
+            "groundedness_pct": 88,
+            "completeness_pct": 82,
+            "contradictions": 0,
+            "actionability": 5,
+            "scope_creep": 0,
+            "below_threshold": [
+              "completeness"
+            ],
+            "pass": false,
+            "schema_valid": true,
+            "json_repairs": 0,
+            "rag_hits": 8,
+            "exec_ms": 17672,
+            "input_hash": "6e17edac1c451ae40345408ea776a0cfb46f107f37d87e9b7154ff702a0fe4f2",
+            "output_hash": "9a78f82bfbb476b79d6b68f160541edce7e2cfc3557fbeeb12231b3326d8ca45",
+            "guardrail_triggers": [
+              "hallucination:invalid_citation_ids"
+            ]
+          }
+        }
+      },
+      {
+        "cycle": 2,
+        "failing": [
+          "engineering_plan",
+          "poc",
+          "tech_stack"
+        ],
+        "scores": {
+          "engineering_plan": {
+            "groundedness_pct": 88,
+            "completeness_pct": 36,
+            "contradictions": 1,
+            "actionability": 4,
+            "scope_creep": 1,
+            "below_threshold": [
+              "completeness",
+              "consistency"
+            ],
+            "pass": false,
+            "schema_valid": true,
+            "json_repairs": 0,
+            "rag_hits": 8,
+            "exec_ms": 48445,
+            "input_hash": "1697e2672f58fea3d892583280be9d44ec227a2914c96286f0c2ba3a1680033f",
+            "output_hash": "8dec6e2279b792242bcf7adf9b7d9f47399f8bf62ab1d8d2c3cbf589f05b8022",
+            "guardrail_triggers": []
+          },
+          "schedule": {
+            "groundedness_pct": 100,
+            "completeness_pct": 100,
+            "contradictions": 0,
+            "actionability": 5,
+            "scope_creep": 0,
+            "below_threshold": [],
+            "pass": true,
+            "schema_valid": true,
+            "json_repairs": 0,
+            "rag_hits": 8,
+            "exec_ms": 22942,
+            "input_hash": "4021993cd4595155122f6b7a852d11dfa941dea69aed3bcfe1570b78bb687506",
+            "output_hash": "c96648cd52caf29982e3ac606d6401f9c75842bbc03eae902e3dbfc25664793e",
+            "guardrail_triggers": []
+          },
+          "architecture": {
+            "groundedness_pct": 100,
+            "completeness_pct": 100,
+            "contradictions": 0,
+            "actionability": 5,
+            "scope_creep": 0,
+            "below_threshold": [],
+            "pass": true,
+            "schema_valid": true,
+            "json_repairs": 0,
+            "rag_hits": 8,
+            "exec_ms": 9,
+            "input_hash": "8f2536331a152e4b99d819afd1e95c5b144c5f05752b013509de0f5063a6bd9f",
+            "output_hash": "5d7c7532fa81ce6b90d470af14f500393d229c3a7f2bd89982ec14d2884e79c2",
+            "guardrail_triggers": []
+          },
+          "poc": {
+            "groundedness_pct": 100,
+            "completeness_pct": 23,
+            "contradictions": 0,
+            "actionability": 4,
+            "scope_creep": 0,
+            "below_threshold": [
+              "completeness"
+            ],
+            "pass": false,
+            "schema_valid": true,
+            "json_repairs": 0,
+            "rag_hits": 8,
+            "exec_ms": 47979,
+            "input_hash": "4ee9a200d593cb57038d1d7b3634ef57b016e9ed21cd8c27e4c0c19de9fd254d",
+            "output_hash": "cab152b19a220cdcea23de037d051e0777ccb6f14732316f1945c836bc38e5ff",
+            "guardrail_triggers": []
+          },
+          "tech_stack": {
+            "groundedness_pct": 88,
+            "completeness_pct": 95,
+            "contradictions": 0,
+            "actionability": 5,
+            "scope_creep": 0,
+            "below_threshold": [
+              "completeness"
+            ],
+            "pass": false,
+            "schema_valid": true,
+            "json_repairs": 0,
+            "rag_hits": 8,
+            "exec_ms": 22564,
+            "input_hash": "6e17edac1c451ae40345408ea776a0cfb46f107f37d87e9b7154ff702a0fe4f2",
+            "output_hash": "3f26b68f2c0b4dd4be672955e51e4b68cfa2a9459a64de9523974c307a8f69d1",
+            "guardrail_triggers": [
+              "hallucination:invalid_citation_ids"
+            ]
+          }
+        }
+      }
+    ],
+    "cross_agent_contradictions": [
+      {
+        "between": [
+          "schedule",
+          "engineering_plan"
+        ],
+        "description": "Mismatch in the phase timelines and dependencies.",
+        "conservative_resolution": "Align the phase timings in the engineering_plan with the detailed schedule."
+      }
+    ]
+  }
+]
